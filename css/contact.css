@@ -32,6 +32,15 @@ html{    background:url(../img/Creative/torontomoon.jpg) no-repeat;
   height:100%;
 }
 
+#box1 {
+border: 1px solid black;
+outline-color:red;
+
+}
+#box1.outset {outline-style: outset;}
+
+
+
 #feedback-page{
 	text-align:center;
 }
@@ -41,6 +50,9 @@ html{    background:url(../img/Creative/torontomoon.jpg) no-repeat;
 	float:left;
 	padding-top:0px;
 }
+
+
+
 
 #form-div {
 	background-color:rgba(72,72,72,0.4);
@@ -181,6 +193,7 @@ input:focus, textarea:focus {
   width:100%;
   background-color:white;
 }
+
 
 @media only screen and (max-width: 580px) {
 	#form-div{

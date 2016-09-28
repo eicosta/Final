@@ -1,203 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<meta charset="utf-8">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<title>This is Project Two </title>
-
-
-	
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/home.css" rel="stylesheet" type="text/css">
+        <title>This is Project Two</title>
 </head>
 <body>
+        <!-- js                                        -->
+        <style>
+        body {margin:0;}
+        ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
 
-<!-- js                                        -->
+        ul.topnav li {float: left;}
 
-<style>
-body {margin:0;}
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+        ul.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+        }
 
-ul.topnav li {float: left;}
+        ul.topnav li a:hover {background-color: #555;}
 
-ul.topnav li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
+        ul.topnav li.icon {display: none;}
 
-ul.topnav li a:hover {background-color: #555;}
+        @media screen and (max-width:680px) {
+        ul.topnav li:not(:first-child) {display: none;}
+        ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+        }
+        }
 
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
-</style>
-</head>
-<body>
-
-<ul class="topnav" id="myTopnav">
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="profile.html">Profile</a></li>
-  <li><a href="home.html">Photography</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
-</ul>
-
-
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+        @media screen and (max-width:680px) {
+        ul.topnav.responsive {position: relative;}
+        ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+        ul.topnav.responsive li {
+        float: none;
+        display: inline;
+        }
+        ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+        }
+        }
+        </style>
+        <ul class="topnav" id="myTopnav">
+                <li>
+                        <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                        <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                        <a href="home.html">Photography</a>
+                </li>
+                <li>
+                        <a href="contact.html">Contact</a>
+                </li>
+                <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()"
+                        style="font-size:15px;">☰</a>
+                </li>
+        </ul>
+        <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+        } else {
         x.className = "topnav";
-    }
-}
-</script>
-  		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!--heres all the navs-->
-		<!--
-		<nav>
-		
-		<a href="index.html">Home</a>
-		<a href="profile.html">About Me</a>
-		<a href="#subSection2">Nature</a>
-		<a href="#subSection3">Creative</a>
-		<a href="contact.html">Contacts</a>
-		</nav>
-
-	-->
-		<div class="sect sectOne"></div>
-		
-		<div class="subSection1"><p>
-		<a name="subSection1"></a>   
-
-		<img src="img/mypic.jpg" alt="my-image" class="circular-image" alt="picture of me" />
-		<h1>Evans Costa</h1> 
-				<h2> " A camara do not make a great picture anymore then a typewriter makes a great novel"</h2>
-
-
-	    </div> 
-		
-		<div class="sect sectTwo"></div>
-		
-
-		<div class="subSection2">
-		<a name="subSection2"> </a>  
-
-		<h2> Nature is the true beauty ... </h2>
-	<div class="gallery">
-	<a href="img/Nature/bird.jpg">
-		<img src="img/Nature/bird.jpg"  alt="Bird flying low"> 
-	<a href="img/Nature/bluffs.jpg">
-		<img src="img/Nature/bluffs.jpg"  alt="Bluffers park">
-	<a href="img/Nature/bluffss.jpg">
-		<img src="img/Nature/bluffss.jpg"  alt="Bluffers park top view">
-	<a href="img/Nature/fall.jpg">
-		<img src="img/Nature/fall.jpg"  alt=" Dead leafs">
-	<a href="img/Nature/fall2.jpg">
-		<img src="img/Nature/flower.jpg"  alt="Pink and green">
-	<a href="img/Nature/green.jpg">
-		<img src="img/Nature/green.jpg"  alt="all green">
-	<a href="img/Nature/tdot.jpg">
-		<img src="img/Nature/tdot.jpg"  alt="toronto skyline">
-	<a href="img/Nature/woodbine.jpg">
-		<img src="img/Nature/woodbine.jpg"  alt="woodbine sunset ">
-
-
-
-	</div>
-
-
-		 </div>
-		
-		<div class="sect sectThree"></div>
-		
-		<div class="subSection3">
-		<a name="subSection3"> </a>
-			<h2> Nature is the true beauty ... </h2>
-	<div class="gallery">
-	<a href="img/Creative/caronfire.jpg">
-		<img src="img/Creative/caronfire.jpg"  alt= "Fire"> 
-	<a href="img/Creative/clouds.jpg">
-		<img src="img/Creative/clouds.jpg"    alt="crazy clouds">
-	<a href="img/Creative/fire.jpg">
-		<img src="img/Creative/fire.jpg"   	  alt="fire everywhere">
-	<a href="img/Creative/fireworks.jpg">
-		<img src="img/Creative/fireworks.jpg"  alt=" Fireworks ">
-	<a href="img/Creative/freebird.jpg">
-		<img src="img/Creative/freebird.jpg"  alt="car on fire">
-	<a href="img/Creative/honda.jpg">
-		<img src="img/Creative/honda.jpg"  alt="honda on fire">
-	<a href="img/Creative/movinglights.jpg">
-		<img src="img/Creative/movinglights.jpg"  alt="moving lights">
-	<a href="img/Creative/torontomoon.jpg">
-		<img src="img/Creative/torontomoon.jpg"  alt="moon over toronto ">
-
-
-
-	</div>
-
-
-		</div> 
-
-		<div class="sect sectfour"></div>
-
-	
-
-		
+        }
+        }
+        </script>
+        <div class="sect sectOne"></div>
+        <div class="subSection1">
+                <p><a id="subSection1" name="subSection1"></a> <img alt=
+                "picture of me" class="circular-image" src="img/mypic.jpg"></p>
+                <h1>Evans Costa</h1>
+                <h2>" A camara do not make a great picture anymore then a
+                typewriter makes a great novel"</h2>
+        </div>
+        <div class="sect sectTwo"></div>
+        <div class="subSection2">
+                <a id="subSection2" name="subSection2"></a>
+                <h2>Nature is the true beauty ...</h2>
+                <div class="gallery">
+                        <a href="img/Nature/bird.jpg"><img alt=
+                        "Bird flying low" src="img/Nature/bird.jpg"></a>
+                        <a href="img/Nature/bluffs.jpg"><img alt=
+                        "Bluffers park" src="img/Nature/bluffs.jpg"></a>
+                        <a href="img/Nature/bluffss.jpg"><img alt=
+                        "Bluffers park top view" src=
+                        "img/Nature/bluffss.jpg"></a> <a href=
+                        "img/Nature/fall.jpg"><img alt=" Dead leafs" src=
+                        "img/Nature/fall.jpg"></a> <a href=
+                        "img/Nature/fall2.jpg"><img alt="Pink and green" src=
+                        "img/Nature/flower.jpg"></a> <a href=
+                        "img/Nature/green.jpg"><img alt="all green" src=
+                        "img/Nature/green.jpg"></a> <a href=
+                        "img/Nature/tdot.jpg"><img alt="toronto skyline" src=
+                        "img/Nature/tdot.jpg"></a> <a href=
+                        "img/Nature/woodbine.jpg"><img alt="woodbine sunset "
+                        src="img/Nature/woodbine.jpg"></a>
+                </div>
+        </div>
+        <div class="sect sectThree"></div>
+        <div class="subSection3">
+                <a id="subSection3" name="subSection3"></a>
+                <h2>Nature is the true beauty ...</h2>
+                <div class="gallery">
+                        <a href="img/Creative/caronfire.jpg"><img alt="Fire"
+                        src="img/Creative/caronfire.jpg"></a> <a href=
+                        "img/Creative/clouds.jpg"><img alt="crazy clouds" src=
+                        "img/Creative/clouds.jpg"></a> <a href=
+                        "img/Creative/fire.jpg"><img alt="fire everywhere" src=
+                        "img/Creative/fire.jpg"></a> <a href=
+                        "img/Creative/fireworks.jpg"><img alt=" Fireworks "
+                        src="img/Creative/fireworks.jpg"></a> <a href=
+                        "img/Creative/freebird.jpg"><img alt="car on fire" src=
+                        "img/Creative/freebird.jpg"></a> <a href=
+                        "img/Creative/honda.jpg"><img alt="honda on fire" src=
+                        "img/Creative/honda.jpg"></a> <a href=
+                        "img/Creative/movinglights.jpg"><img alt=
+                        "moving lights" src=
+                        "img/Creative/movinglights.jpg"></a> <a href=
+                        "img/Creative/torontomoon.jpg"><img alt=
+                        "moon over toronto " src=
+                        "img/Creative/torontomoon.jpg"></a>
+                </div>
+        </div>
+        <div class="sect sectfour"></div>
 </body>
 </html>
